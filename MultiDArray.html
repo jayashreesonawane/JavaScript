@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multi Dimension Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// 1. toString
+		document.write("-----------------toString()---------------------"+"<br>");
+
+		let a = [[10,20],[30,40]];
+		document.write(a+"<br>");
+
+
+		// 2. For Loop
+		document.write("-----------------For Loop------------------------"+"<br>");
+
+		for(let i=0; i<a.length; i++)
+		{
+			for(let j=0;j<a[i].length;j++)
+			{
+				document.write(a[i][j]+"<br>");
+		}
+
+		// 3. for in
+		document.write("-----------------For In Loop---------------------"+"<br>");
+
+		for(let i in a)
+		{
+			for(let j in a[i])
+			{
+				document.write(a[i][j]+"<br>");
+			}
+		}
+
+		// 4. for of
+		document.write("-----------------For Of Loop---------------------"+"<br>");
+
+		for(let i of a)
+		{
+			for(let j of i)
+			{
+				document.write(j+"<br>");
+			}
+		}
+
+		// 5. for each()
+		document.write("-----------------For Each() Loop---------------------"+"<br>");
+
+		a.forEach(c=>c.forEach(j=>document.write(j+"<br>")));
+
+		// 6. while loop 
+		document.write("-----------------While Loop---------------------"+"<br>");
+
+		let i=0;
+		while(i<a.length)
+		{
+			let j=0;
+			while(j<a[i].length)
+			{
+				document.write(a[i][j++]+"<br>");
+			}
+			i++;
+		}
+
+		// 7. Do while Loop
+		document.write("-----------------Do While Loop---------------------"+"<br>");
+
+		let l = 0;
+		do 
+		{
+  			let m = 0;
+  			do 
+  			{
+    			document.write(a[l][m++] + "<br>");
+  			} 
+  			while (m < a[l].length);
+  			l++;
+		} 
+		while (l < a.length);
+
+
+		
+	</script>
+</body>
+</html>

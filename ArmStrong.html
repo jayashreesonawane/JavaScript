@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Armstrong Number</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let number = "407";
+		let sum = 0 ;
+		let output = number.split('').map((element)=>sum+=(element**(number.length)));
+		document.write((output[number.length-1]==number)?"Armstrong Number":"Not Armstrong number");
+	</script>
+</body>
+</html>

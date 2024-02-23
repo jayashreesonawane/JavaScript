@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Asynchronous</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function demo1(name,native) 
+		{
+			document.writeln("demo1()"+name+" I belongs to "+native+"<br>");
+		}
+		function demo2()
+		{
+			document.writeln("demo2()"+"<br>");
+		}
+		function demo3()
+		{
+			document.writeln("demo3()"+"<br>");
+		}
+		function demo4()
+		{
+			document.writeln("demo4()"+"<br>");
+		}
+		function demo5()
+		{
+			document.writeln("demo5()"+"<br>");
+		}
+		function demo6()
+		{
+			document.writeln("demo6()"+"<br>");
+		}
+		setTimeout(demo1,1000,"jaya","pune");
+		setInterval(demo2,2000);
+		setInterval(demo3,3000);
+		setInterval(demo4,4000);
+		setInterval(demo5,5000);
+		setInterval(demo6,6000);
+	</script>
+</body>
+</html>

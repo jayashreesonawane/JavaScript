@@ -1,0 +1,83 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.container{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(360deg,#33ECFF,#4FC1CC,#52A7AF,#568085);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.to-do{
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+	background-color: lightpink;
+	border-radius: 40px;
+/*	overflow: hidden;               //contain outside the due it will be hidden*/
+	padding: 20px;
+}
+.task-div{
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	background-color: whitesmoke;
+	height: 30px;
+	position: relative;
+	border-radius: 30px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+button{
+	position: absolute;
+	right: 0;
+	border: none;
+	outline: none;
+	height: 30px;
+	border-radius: 30px;
+	width: 70px;
+	background-color: lightcoral;
+	color: white;
+	font-weight: bolder;
+	cursor: pointer;
+}
+input{
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+ul li{
+/*	list-style-type: none;*/
+	padding: 8px 30px 20px;
+	position: relative;
+}
+ul li::before{
+	content: '';
+	background-image: url("https://cdn-icons-png.flaticon.com/256/71/71397.png");
+	background-size: contain;
+	height: 13px;
+	width: 13px;
+	position: absolute;
+	top: 18px;
+	left: 0;
+}
+ul li.checked{
+	color: grey;
+	text-decoration: line-through;
+}
+ul li.checked::before{
+	background-image: url("https://dictionary.cambridge.org/images/thumb/circle_noun_001_02738.jpg?version=5.0.345");
+}
+span{
+	position: absolute;
+	right: 0px;
+	font-size: 10px;
+	top: 10px;
+}

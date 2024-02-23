@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Unique Element from Array</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// Unique Element from Array
+
+		document.write("----------------------Unique Element from Array-------------------------"+"<br>");
+
+		let a = [1,2,1,1,3,2,4,3,2,1,5,6,5];
+		document.write(a+"<br>");
+		let b = [...new Set(a)];
+		document.write(b+"<br>");
+
+		// Strings using multiple data
+
+		document.write("----------------------Strings using multiple data-------------------------"+"<br>");
+
+		let c = ["Jay",1,"Shree","Jay",2,3,1,"Jayas",4,3,"Abc"];
+		document.write(c+"<br>");
+		let d = [...new Set(c)];
+		document.write(d+"<br>");
+
+		// Rest Operator -> Group together the elements into an array
+
+		document.write("----------------------Rest Operator -> Group together the elements into an array-------------------------"+"<br>");
+
+		function demo(...abc)
+		{
+			document.write(abc+"<br>");
+		}
+		demo(10,20,30);
+
+		// Destructuring of an Array (used in ReactJS)
+
+		document.write("----------------------Destructuring of an Array (used in ReactJS)-------------------------"+"<br>");
+
+		let array = [10,20,30,40];
+		[a,b,...c] = array;
+		document.writeln(a);
+		document.writeln(b); 
+		document.writeln(c+"<br>");  
+
+		// Spread Operator -> Ungroup the array 
+
+		document.write("----------------------Spread Operator -> Ungroup the array-------------------------"+"<br>");
+
+		function demo1(a,b,c)
+		{
+			document.writeln(a);
+			document.writeln(b); 
+			document.writeln(c);  
+		}
+		demo([10,20,30]);
+
+		// Math function
+
+		document.write("----------------------Math Function-------------------------"+"<br>");
+
+		let f = [10,20,2132,1,22,1234,21231];
+		document.writeln("Max Function = "+Math.max(...f)+"<br>");
+		document.writeln("Min Function = "+Math.min(...f));
+
+	</script>
+</body>
+</html>

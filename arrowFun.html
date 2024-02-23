@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fat Arrow Function in JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		// 1 argument function
+
+		function demo(a,b)
+		{
+			return (a+b);
+		}
+		let demop = (demo(5,3));
+		document.write(demop+"<br>");
+
+		// 2 Function Expression
+
+		// let a = function demo(name) 
+		// {
+		// 	document.write(`My name is ${name}`+"<br>");
+		// }
+		// a("jayashree");
+
+		// 3 Annonymous Function
+
+		// let a = function (name)
+		// {
+		// 	document.write(`My name is ${name}`+"<br>");
+		// }
+		// a("Shree");
+
+		// 4 Self Invoking Function
+
+		// (function (name)
+		// {
+		// 	document.write(`My name is ${name}`+"<br>");
+		// })("Jayu");
+
+		// 5 
+
+		let a = (a,b) => a+b;
+		//a(4,5);
+		document.write(a(4,4));
+		
+	</script>
+</body>
+</html>

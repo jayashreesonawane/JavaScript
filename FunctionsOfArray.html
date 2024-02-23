@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Functions of Arrays</title>
+</head>
+<body>
+	<h1>Functions in Arrays</h1>
+	<script type="text/javascript">
+		document.write("---------------------------------------------------------------------"+"<br>");
+
+		let a = [10,20,30];
+		document.write("a = "+a+"<br>");
+		let b = [40,50,60];
+		document.write("b = "+b+"<br>");
+		let c = [70,80,90];
+		document.write("c = "+c+"<br>");
+		let d = a.concat(b);
+		document.write("d = "+d+"<br>");
+
+		document.write("---------------------------------------------------------------------"+"<br>");
+
+		let e = a.concat(b,c);
+		document.write("concat(merging of arrays) = "+e+"<br>");
+		e.pop();
+		document.write("pop(remove last element) = "+e+"<br>");
+		e.push("Last");
+		document.write("push(add last element) = "+e+"<br>");
+		e.shift();
+		document.write("shift(remove first element) = "+e+"<br>");
+		e.unshift();
+		document.write("unshift(add first element) = "+e+"<br>");
+
+		document.write("---------------------------------------------------------------------"+"<br>");
+
+		let unsorted = [1,3,5,7,9,0,2,4,6,8];
+		document.write("Unsorted Array : "+unsorted+"<br>");
+
+		unsorted.sort();
+		document.write("Sorted Array : "+unsorted+"<br>");
+
+		unsorted.reverse();
+		document.write("Reverse Array : "+unsorted+"<br>");
+
+		document.write("---------------------------------------------------------------------"+"<br>");
+
+		let f = [1,2,3,4,5,6,7,8,4,9,10];
+		document.write(a+"<br>");
+		
+		let index = f.indexOf(4);
+		document.write("Index Of 4 = "+index+"<br>");
+
+		let lastIndex = f.lastIndexOf(4);
+		document.write("Last Index Of 4 = "+lastIndex+"<br>");
+
+		f.splice(3,5,"FOUR","FIVE","SIX");
+		document.write(f+"<br>");
+
+		let nArray = f.slice(0,3);
+		document.write(nArray+"<br>");
+
+		document.write("---------------------------------------------------------------------"+"<br>");
+
+		
+
+	</script>
+</body>
+</html>

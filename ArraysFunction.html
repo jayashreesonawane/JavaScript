@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays Functions</title>
+</head>
+<body>
+	<h2>Functions of Arrays</h2>
+	<script type="text/javascript">
+		let array = [1,4,6,8,0,123,34,543,231,100,2,3];
+		document.write(array+"<br>");
+
+		document.write("------------------------------------------"+"<br>");
+		
+		//odd elements
+
+		let odd = array.filter(element=>element%2!=0);
+		document.write(odd+"<br>");
+
+		//odd elements
+
+		let even = array.filter(element=>element%2==0);
+		document.write(even+"<br>");
+
+		document.write("------------------------------------------"+"<br>");
+
+		let b = array.filter(element=>element<=100).sort((a,b)=>a-b).filter(element=>element%2==0);
+		document.write(b+"<br>");
+
+		document.write("------------------------------------------"+"<br>");
+
+		let name = "aka";
+		let reverse = name.split('').reverse().join('');
+		document.write(reverse==name?"Palindrome":"not Palindrome");
+	</script>
+</body>
+</html>
